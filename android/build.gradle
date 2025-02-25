@@ -34,6 +34,18 @@ android {
     defaultConfig {
         minSdkVersion 24
     }
+
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+        // Add Kotlin JVM target
+    kotlinOptions {
+        jvmTarget = '1.8' // Fixes "jvmTarget" error
+    }
+    
     lintOptions {
         disable 'InvalidPackage'
     }
